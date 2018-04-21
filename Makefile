@@ -2,7 +2,7 @@ CC := g++ # This is the main compiler
 SRCDIR := src
 BUILDDIR := build
 TARGET := bin/restaurant
-
+ARCHIVE := Restaurant.tgz
 SRCEXT := cpp
 SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))
 OBJECTS := $(patsubst $(SRCDIR)/%,$(BUILDDIR)/%,$(SOURCES:.$(SRCEXT)=.o))
