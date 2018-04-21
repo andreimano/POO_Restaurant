@@ -29,13 +29,13 @@ Grup::Grup()
     notaTotala(0)
 {}
 
-Grup(std::vector<Client>* vc, int x, float y)
+Grup::Grup(std::vector<Client>* vc, int x, float y)
   : clienti(vc),
     numarClienti(x),
     notaTotala(y)
 {}
 
-Grup(int x)
+Grup::Grup(int x)
   : clienti(new std::vector<Client>),
     numarClienti(x),
     notaTotala(0)
