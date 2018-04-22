@@ -27,7 +27,9 @@ Ciorba::Ciorba(float x, int y, bool z, bool k, std::string tip)
     name(new std::string(tip)),
     smantana(z),
     ardei(k)
-{} // constructor init
+{
+  ++Ciorba::vanzari;
+} // constructor init
 
 Ciorba::Ciorba(const Ciorba& x) { //upcasting
   smantana = x.smantana;
